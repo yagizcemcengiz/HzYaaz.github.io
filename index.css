@@ -471,3 +471,19 @@ h2
 {
     opacity: 0.8;
 }
+
+.fa
+{
+    text-decoration: none;
+}
+
+.fa:hover
+{
+    opacity: 0.8;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
