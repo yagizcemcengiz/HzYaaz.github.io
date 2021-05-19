@@ -1,54 +1,38 @@
-function setFormMessage(formElement, type, message) {
-    const messageElement = formElement.querySelector(".form__message");
+var users = [{username: "admin", password:"admin"},
+            {username: "admin", password:"root"},
+            {username: "root", password:"root"},
+            {username: "root", password:"toor"}];
 
-    messageElement.textContent = message;
-    messageElement.classList.remove("form__message--success", "form__message--error");
-    messageElement.classList.add(`form__message--${type}`);
+            
+var enteredUsername;
+var enteredPassword;
+var i;
+
+function Check()
+{
+    enteredUsername = document.getElementById("username").value;
+    enteredPassword = document.getElementById("userpassword").value;
+
+    for(i of users)
+    {
+        if((i.username == enteredUsername) && (i.password == enteredPassword))
+        {
+            return true;
+        }
+    }
 }
 
-function setInputError(inputElement, message) {
-    inputElement.classList.add("form__input--error");
-    inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+function loginConfirm()
+{
+    if(Check())
+    {
+        console.log("Selam");
+        window.location.replace("index.html");
+        console.log("Selammmmmm");
+    }
+    
+    else
+    {
+        alert("Hatalı Kullanıcı Adı veya Parola Girdiniz...");
+    }
 }
-
-function clearInputError(inputElement) {
-    inputElement.classList.remove("form__input--error");
-    inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.querySelector("#login");
-    const createAccountForm = document.querySelector("#createAccount");
-
-    document.querySelector("#linkCreateAccount").addEventListener("click", e => {
-        e.preventDefault();
-        loginForm.classList.add("form--hidden");
-        createAccountForm.classList.remove("form--hidden");
-    });
-
-    document.querySelector("#linkLogin").addEventListener("click", e => {
-        e.preventDefault();
-        loginForm.classList.remove("form--hidden");
-        createAccountForm.classList.add("form--hidden");
-    });
-
-    loginForm.addEventListener("submit", e => {
-        e.preventDefault();
-
-        
-
-        setFormMessage(loginForm, "error", "Hatalı kullanıcı adı/şifre");
-    });
-
-    document.querySelectorAll(".form__input").forEach(inputElement => {
-        inputElement.addEventListener("blur", e => {
-            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 5) {
-                setInputError(inputElement, "Kullanıcı adı minimum 5 harften oluşmalıdır");
-            }
-        });
-
-        inputElement.addEventListener("input", e => {
-            clearInputError(inputElement);
-        });
-    });
-});
