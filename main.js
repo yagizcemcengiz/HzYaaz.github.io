@@ -26,9 +26,7 @@ function loginConfirm()
 {
     if(Check())
     {
-        console.log("Selam");
         window.location.replace("index.html");
-        console.log("Selammmmmm");
     }
     
     else
