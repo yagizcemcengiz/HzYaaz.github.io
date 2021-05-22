@@ -31,6 +31,6 @@ function loginConfirm()
     
     else
     {
-        alert("Hatalı Kullanıcı Adı veya Parola Girdiniz...");
+        alert("Hatalı Kullanıcı Adı veya Parola Girdiniz...\n\nKullanıcı Adı: admin\nŞifre: admin\n\nKullanıcı Adı: admin\nmŞifre: root\n\nKullanıcı Adı: root\nŞifre: root\n\nKullanıcı Adı: root\nŞifre: toor");
     }
 }
