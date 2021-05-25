@@ -24,7 +24,7 @@ git clone https://github.com/HzYaaz/HzYaaz.github.io
 ```
 
 ## Eklenecekler
-   [Tradingview](https://tr.tradingview.com/chart/)'den anlık grafikleri çekmek. Düzgün bir kullanıcı girişi ve kaydı.
+   [Tradingview](https://tr.tradingview.com/chart/)'den grafikleri anlık çekmek. Düzgün bir kullanıcı girişi ve kaydı.
 
 ## Projeyi Geliştiren
 Yağızcem CENGİZ
