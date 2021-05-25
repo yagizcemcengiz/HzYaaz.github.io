@@ -33,6 +33,8 @@ Galeri sayfasında yer alan resimlerin düzensiz bir biçimde gözükmesi.
    [Tradingview](https://tr.tradingview.com/chart/)'den grafikleri anlık çekmek. 
    
    Düzgün bir kullanıcı girişi ve kaydı.
+   
+   Kripto Coin Alış-Satış arayüzü.
 
 ## Projeyi Geliştiren
 Yağızcem CENGİZ
