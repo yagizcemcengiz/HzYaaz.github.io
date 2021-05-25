@@ -23,6 +23,11 @@ Daha sonra ;
 git clone https://github.com/HzYaaz/HzYaaz.github.io
 ```
 
+## Bilinen Hatalar
+
+İletişim sayfasında yer alan Mesaj kısmı.
+Galeri sayfasında yer alan resimlerin düzensiz bir biçimde gözükmesi.
+
 ## Eklenecekler
    [Tradingview](https://tr.tradingview.com/chart/)'den grafikleri anlık çekmek. Düzgün bir kullanıcı girişi ve kaydı.
 
