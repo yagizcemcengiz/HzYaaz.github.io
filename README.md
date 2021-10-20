@@ -5,6 +5,10 @@ Web programlama proje ödevi. ATACOIN.com kripto ve borsa sitesi
 ## NASIL İNDİRİLİR ?
 
 İndirmek için önce [wget](https://www.gnu.org/software/wget/) kurmanız lazım.
+```bash
+apt-get install wget
+brew install wget
+```
 
 
 Fedora, Centos gibi bir Red Hat Linux tabanlı sistemde ;
